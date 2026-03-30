@@ -2,7 +2,7 @@
 // import { getSwiper, getDailyRecommend } from '../apis';
 // import { DailyRecommendType } from '../models';
 import { getSwiper, getDailyRecommend, getRecommendList } from '../apis';
-import { DailyRecommendType, RecommendListType } from '../models';
+import { DailyRecommendType, RecommendListType } from '../models/Index';
 @Component
 export default struct Recommend {
   @State dailyRecommend: DailyRecommendType[] = [];
