@@ -18,7 +18,7 @@ export default struct Mine {
         // 关键1：设置断点与列数
         // breakpoints: { value: ['100vp'] }, // 仅1个断点，保证所有屏幕都是4列
         columns: 4, // 总列数固定为4
-        gutter: { x: 8, y: 8 }            // 项之间的横向/纵向间距
+        gutter: { x: 2, y: 2 }            // 项之间的横向/纵向间距
       }) {
         // 遍历每列生成网格项
         ForEach(this.columnList, (item: number) => {
@@ -100,7 +100,6 @@ export default struct Mine {
 struct SongCard {
   @Prop songs: SongItemType[] = [];
   build() {
-
     List({ space: 12 }) {
       ForEach(this.songs, (item: SongItemType) => {
         ListItem() {

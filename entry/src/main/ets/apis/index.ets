@@ -1,5 +1,5 @@
 import { http } from '@kit.NetworkKit';
-const baseUrl = 'http://172.29.32.1:3000';
+const baseUrl = 'http://172.25.48.1:3000';
 export const getDailyRecommend = async () => {
   return await getData('/data/dailyRecommend');
 };
