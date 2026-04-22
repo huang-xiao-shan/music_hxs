@@ -3,6 +3,7 @@ import { hilog } from '@kit.PerformanceAnalysisKit';
 import { window } from '@kit.ArkUI';
 import { SAFE_TOP, SAFE_BOTTOM } from '../contants';
 import AVPlayerManager from '../utils/AVPlayerManager';
+import AVSessionManager from '../utils/AVSessionManager';
 
 const DOMAIN = 0x0000;
 
@@ -44,6 +45,7 @@ export default class EntryAbility extends UIAbility {
       AppStorage.setOrCreate(SAFE_BOTTOM, safeBottom);
       // 初始化播放器
       AVPlayerManager.init();//新增
+      AVSessionManager.init(this.context);
     });
   }
 
